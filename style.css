@@ -92,7 +92,7 @@ body {
 /* Talavera negra como textura de todo el header */
 .header-bg {
   position: absolute; inset: 0;
-  background-image: url('/fondos/mn1.png');
+  background-image: url('fondos/mn1.png');
   background-size: 400px;
   background-repeat: repeat;
   opacity: .09;
@@ -114,7 +114,7 @@ body {
   position: absolute;
   right: 0; top: 0;
   width: 32%; height: 100%;
-  background-image: url('/fondos/ma.jpg');
+  background-image: url('fondos/ma.jpg');
   background-size: 320px;
   background-repeat: repeat;
   opacity: .18;
@@ -226,7 +226,7 @@ body {
 .especiales-section::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: url('/fondos/ma.jpg');
+  background-image: url('fondos/ma.jpg');
   background-size: 280px;
   background-repeat: repeat;
   opacity: .07;
@@ -340,7 +340,7 @@ body {
 .menu-section::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: url('/fondos/mn2.png');
+  background-image: url('fondos/mn2.png');
   background-size: 350px;
   background-repeat: repeat;
   opacity: .055;
@@ -776,7 +776,7 @@ body {
 .footer::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: url('/fondos/ma.jpg');
+  background-image: url('fondos/ma.jpg');
   background-size: 220px; background-repeat: repeat;
   opacity: .06; z-index: 0;
 }
@@ -825,4 +825,5 @@ body {
   .header-side,
   .header-side-fade    { width: 45%; }
   .modal               { max-width: 100%; }
+
 }

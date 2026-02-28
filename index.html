@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mestizo — Cocina Abierta · Salvatierra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-side"></div>
+  <div class="header-side-fade"></div>
+  <div class="header-overlay"></div>
+
+  <div class="header-content">
+    <img src="/extras/mestizo.jpg" alt="Logo Mestizo" class="header-logo"/>
+    <h1 class="header-nombre">Mestizo</h1>
+    <div class="header-sep"></div>
+    <p class="header-eslogan">Cocina Abierta</p>
+    <p class="header-pueblo">✦ &nbsp;Salvatierra, Guanajuato &nbsp;·&nbsp; Pueblo Mágico&nbsp; ✦</p>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Ver menú</span>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+
+  <div class="header-madera"></div>
+</header>
+
+<div class="divisor"></div>
+
+<!-- ══════════════════════════════════════
+     ESPECIALES / TEMPORADA
+══════════════════════════════════════ -->
+<section class="especiales-section">
+  <div class="section-label">
+    <span class="eyebrow">lo más destacado</span>
+    <h2>Especiales</h2>
+    <div class="linea"></div>
+  </div>
+
+  <div class="especiales-grid">
+
+    <!--
+      ➕ Para agregar un especial copia este bloque completo.
+      Cambia la clase del badge: badge-temporada | badge-oferta | badge-combo | badge-evento
+    -->
+
+    <div class="especial-card">
+      <!-- Si tienes foto: <img src="tu-foto.jpg" class="especial-img" alt="..."> -->
+      <div class="especial-img-placeholder"><i class="bi bi-calendar-star"></i></div>
+      <span class="especial-badge badge-temporada"><i class="bi bi-leaf"></i> Temporada</span>
+      <div class="especial-body">
+        <div class="especial-nombre">Platillo de temporada</div>
+        <div class="especial-desc">Descripción del platillo especial de temporada. Ingredientes frescos de la región preparados con técnica propia.</div>
+        <div class="especial-footer">
+          <span class="especial-precio">$XX</span>
+          <span class="especial-vigencia">Disponible este mes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="especial-card">
+      <div class="especial-img-placeholder"><i class="bi bi-percent"></i></div>
+      <span class="especial-badge badge-oferta"><i class="bi bi-tag"></i> Oferta</span>
+      <div class="especial-body">
+        <div class="especial-nombre">Combo del día</div>
+        <div class="especial-desc">Platillo fuerte + bebida + postre a precio especial. Solo en horario de comida.</div>
+        <div class="especial-footer">
+          <span class="especial-precio">$XX</span>
+          <span class="especial-vigencia">Lun – Vie · 13–17h</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="especial-card">
+      <div class="especial-img-placeholder"><i class="bi bi-stars"></i></div>
+      <span class="especial-badge badge-evento"><i class="bi bi-megaphone"></i> Evento</span>
+      <div class="especial-body">
+        <div class="especial-nombre">Próximo evento</div>
+        <div class="especial-desc">Noche de música en vivo, menú especial y ambiente único. Reserva tu lugar con anticipación.</div>
+        <div class="especial-footer">
+          <span class="especial-precio">Gratis</span>
+          <span class="especial-vigencia">Sábado 29 de Feb</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divisor"></div>
+
+<!-- ══════════════════════════════════════
+     MENÚ / CARRUSEL
+══════════════════════════════════════ -->
+<section class="menu-section">
+  <div class="section-label">
+    <span class="eyebrow">lo que ofrecemos</span>
+    <h2>Nuestra Carta</h2>
+    <div class="linea"></div>
+  </div>
+
+  <div class="menu-wrap">
+    <button class="carousel-arrow" id="prevBtn" aria-label="Anterior">&#10094;</button>
+
+    <div class="carousel-container">
+      <div class="carousel-pages">
+
+        <!-- ── DESAYUNOS ──────────────────────── -->
+        <div class="p1 page">
+          <div class="page-header">
+            <div class="categoria-icon"><i class="bi bi-sun"></i></div>
+            <div>
+              <h3>Desayunos</h3>
+              <p class="page-sub">el mejor comienzo del día</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <div class="menu-item"
+              data-nombre="Chilaquiles"
+              data-precio="$XX"
+              data-alergenos="Gluten, Lácteos"
+              data-icono="🌿">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🌿</div>
+              <div class="menu-item-nombre">Chilaquiles</div>
+              <div class="menu-item-desc">Verdes o rojos, crema, queso y pollo opcional</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item"
+              data-nombre="Emparedados"
+              data-precio="$XX"
+              data-alergenos="Gluten"
+              data-icono="🥪">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🥪</div>
+              <div class="menu-item-nombre">Emparedados</div>
+              <div class="menu-item-desc">Hechos en casa, rellenos a tu gusto</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <!-- ➕ Agrega más platillos aquí siguiendo este patrón -->
+
+          </div>
+        </div>
+
+        <!-- ── PLATILLOS FUERTES ──────────────── -->
+        <div class="p2 page">
+          <div class="page-header">
+            <div class="categoria-icon"><i class="bi bi-fire"></i></div>
+            <div>
+              <h3>Platillos Fuertes</h3>
+              <p class="page-sub">de nuestra cocina abierta</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <div class="menu-item"
+              data-nombre="Pastas"
+              data-precio="$XX"
+              data-alergenos="Gluten, Lácteos, Huevo"
+              data-icono="🍝">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🍝</div>
+              <div class="menu-item-nombre">Pastas</div>
+              <div class="menu-item-desc">Elaboradas al momento con salsas de la casa</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item"
+              data-nombre="Pizzas"
+              data-precio="$XX"
+              data-alergenos="Gluten, Lácteos"
+              data-icono="🍕">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🍕</div>
+              <div class="menu-item-nombre">Pizzas</div>
+              <div class="menu-item-desc">Base artesanal, ingredientes frescos</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item"
+              data-nombre="Ensaladas"
+              data-precio="$XX"
+              data-alergenos="Ninguno"
+              data-icono="🥗">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🥗</div>
+              <div class="menu-item-nombre">Ensaladas</div>
+              <div class="menu-item-desc">Frescas, nutritivas y llenas de sabor</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── SUSHI ──────────────────────────── -->
+        <div class="p3 page">
+          <div class="page-header">
+            <div class="categoria-icon"><i class="bi bi-basket2"></i></div>
+            <div>
+              <h3>Sushi</h3>
+              <p class="page-sub">tradición japonesa con sazón propio</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <div class="menu-item"
+              data-nombre="Clásicos"
+              data-precio="$XX"
+              data-alergenos="Mariscos, Soya, Gluten"
+              data-icono="🍣">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🍣</div>
+              <div class="menu-item-nombre">Clásicos</div>
+              <div class="menu-item-desc">Nigiris, makis y uramakis tradicionales</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item"
+              data-nombre="Pokebowl"
+              data-precio="$XX"
+              data-alergenos="Mariscos, Soya"
+              data-icono="🥣">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🥣</div>
+              <div class="menu-item-nombre">Pokebowl</div>
+              <div class="menu-item-desc">Tazones frescos al estilo hawaiano</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item"
+              data-nombre="Ramen"
+              data-precio="$XX"
+              data-alergenos="Gluten, Soya, Huevo"
+              data-icono="🍜">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🍜</div>
+              <div class="menu-item-nombre">Ramen</div>
+              <div class="menu-item-desc">Caldo concentrado, toppings generosos</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item"
+              data-nombre="Especiales"
+              data-precio="$XX"
+              data-alergenos="Mariscos, Soya, Gluten"
+              data-icono="⭐">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">⭐</div>
+              <div class="menu-item-nombre">Especiales</div>
+              <div class="menu-item-desc">Creaciones únicas de nuestra cocina</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── BEBIDAS ─────────────────────────── -->
+        <div class="p4 page">
+          <div class="page-header">
+            <div class="categoria-icon"><i class="bi bi-cup-straw"></i></div>
+            <div>
+              <h3>Bebidas</h3>
+              <p class="page-sub">para cada momento del día</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <div class="menu-item" data-nombre="Bebidas Frías" data-precio="$XX" data-alergenos="Ninguno" data-icono="🧊">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🧊</div>
+              <div class="menu-item-nombre">Frías</div>
+              <div class="menu-item-desc">Refrescantes y naturales</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item" data-nombre="Bebidas Calientes" data-precio="$XX" data-alergenos="Lácteos" data-icono="☕">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">☕</div>
+              <div class="menu-item-nombre">Calientes</div>
+              <div class="menu-item-desc">Café, té y más</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item" data-nombre="Smoothies" data-precio="$XX" data-alergenos="Lácteos" data-icono="🥤">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🥤</div>
+              <div class="menu-item-nombre">Smoothies</div>
+              <div class="menu-item-desc">Frutas frescas de temporada</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item" data-nombre="Jugos Naturales" data-precio="$XX" data-alergenos="Ninguno" data-icono="🍊">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🍊</div>
+              <div class="menu-item-nombre">Jugos</div>
+              <div class="menu-item-desc">Naturales y recién exprimidos</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item" data-nombre="Frappes" data-precio="$XX" data-alergenos="Lácteos, Cafeína" data-icono="🧋">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🧋</div>
+              <div class="menu-item-nombre">Frappes</div>
+              <div class="menu-item-desc">Cremosos y bien fríos</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+            <div class="menu-item" data-nombre="Licuados" data-precio="$XX" data-alergenos="Lácteos" data-icono="🥛">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🥛</div>
+              <div class="menu-item-nombre">Licuados</div>
+              <div class="menu-item-desc">Clásicos de la casa</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── POSTRES ─────────────────────────── -->
+        <div class="p5 page">
+          <div class="page-header">
+            <div class="categoria-icon"><i class="bi bi-cake2"></i></div>
+            <div>
+              <h3>Postres</h3>
+              <p class="page-sub">el cierre perfecto</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <div class="menu-item"
+              data-nombre="Postre de la Semana"
+              data-precio="$XX"
+              data-alergenos="Gluten, Lácteos, Huevo"
+              data-icono="🍮"
+              style="grid-column:1/-1; max-width:300px; margin:0 auto;">
+              <span class="menu-item-hint">ver detalle</span>
+              <div class="menu-item-thumb-placeholder">🍮</div>
+              <div class="menu-item-nombre">Postre de la Semana</div>
+              <div class="menu-item-desc">Creación especial que cambia cada semana. Pregunta a tu mesero por la sorpresa de hoy.</div>
+              <div class="menu-item-precio">$XX</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /carousel-pages -->
+    </div><!-- /carousel-container -->
+
+    <button class="carousel-arrow" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+  </div>
+
+  <div class="carousel-dots" id="dotsContainer"></div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar"><i class="bi bi-x"></i></button>
+    <div class="modal-img-wrap">
+      <div class="modal-img-placeholder" id="modalImgPlaceholder"></div>
+      <img class="modal-img" id="modalImg" src="" alt="" style="display:none"/>
+      <div class="modal-img-stripe"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-nombre" id="modalNombre">—</div>
+      <div class="modal-precio" id="modalPrecio">—</div>
+      <div class="modal-sep"></div>
+      <div class="modal-seccion-titulo">Alérgenos e ingredientes</div>
+      <div class="modal-alergenos" id="modalAlergenos"></div>
+    </div>
+  </div>
+</div>
+
+<div class="divisor"></div>
+
+<!-- ══════════════════════════════════════
+     HISTORIA | MAPA | CONTACTO
+══════════════════════════════════════ -->
+<section class="extras-section">
+  <div class="section-label">
+    <span class="eyebrow">conócenos</span>
+    <h2>El Lugar</h2>
+    <div class="linea"></div>
+  </div>
+
+  <div class="extras-grid">
+
+    <div class="extra-card" id="historia">
+      <div class="extra-card-header">
+        <div class="eyebrow">nuestra historia</div>
+        <h3>Raíces Mestizas</h3>
+      </div>
+      <div class="extra-card-body">
+        <span class="badge-pueblo"><i class="bi bi-geo-alt"></i>&nbsp; Pueblo Mágico · Salvatierra</span>
+        <p>Mestizo nació de la fusión: la calidez y los sabores de Salvatierra con
+        técnicas de cocina del mundo. <em>Cocina Abierta</em> no es solo un concepto —
+        es una invitación a ver cómo se prepara cada platillo.</p>
+        <p>Aquí conviven los mosaicos de talavera con las vigas centenarias,
+        las mesas de madera con la carta más diversa del Pueblo Mágico.
+        Una experiencia que mezcla lo local y lo global, igual que nosotros.</p>
+      </div>
+    </div>
+
+    <div class="extra-card" id="ubicacion">
+      <div class="extra-card-header">
+        <div class="eyebrow">encuéntranos</div>
+        <h3>Dónde Estamos</h3>
+      </div>
+      <div class="extra-card-body">
+        <iframe
+          src="https://maps.app.goo.gl/ZoBW75TKz2wwK5Cq9"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Mestizo Cocina Abierta">
+        </iframe>
+        <div class="mapa-address">
+          <i class="bi bi-geo-alt"></i>
+          Salvatierra, Guanajuato &nbsp;·&nbsp; Pueblo Mágico
+        </div>
+      </div>
+    </div>
+
+    <div class="extra-card" id="contacto">
+      <div class="extra-card-header">
+        <div class="eyebrow">reservaciones y pedidos</div>
+        <h3>Contáctanos</h3>
+      </div>
+      <div class="extra-card-body">
+        <p>Síguenos en redes o escríbenos<br/>para reservar tu mesa.</p>
+        <div class="social-row">
+          <button class="btn-social instagram" onclick="irAInstagram()" title="Instagram">
+            <i class="bi bi-instagram"></i>
+          </button>
+          <button class="btn-social facebook" onclick="irAFacebook()" title="Facebook">
+            <i class="bi bi-facebook"></i>
+          </button>
+          <button class="btn-social whatsapp" onclick="reservar()" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </button>
+        </div>
+        <!-- ✏️ Edita estos horarios -->
+        <div class="horario-chip">
+          <div class="fila"><span class="dia">Lun – Vie</span><span class="hora">9:00 – 21:00</span></div>
+          <div class="fila"><span class="dia">Sábado</span><span class="hora">9:00 – 22:00</span></div>
+          <div class="fila"><span class="dia">Domingo</span><span class="hora">10:00 – 18:00</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="footer">
+  <img src="/extras/mestizo.jpg" alt="Logo Mestizo" class="footer-logo-img"/>
+  <div class="footer-nombre">Mestizo</div>
+  <p class="footer-sub">Cocina Abierta &nbsp;·&nbsp; Salvatierra, Gto.</p>
+  <div class="footer-linea"></div>
+  <p class="footer-copy">&copy; 2025 Mestizo Cocina Abierta — Todos los derechos reservados</p>
+</footer>
+<script src="app.js"></script>
+
+</body>
+</html>
